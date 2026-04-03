@@ -1,6 +1,7 @@
 // ignore_for_file: sort_child_properties_last
 
 import 'package:flutter/material.dart';
+import 'package:flutter_taskapp_01/views/add_task_ui.dart';
 
 class AllTaskUi extends StatefulWidget {
   const AllTaskUi({super.key});
@@ -24,7 +25,12 @@ class _AllTaskUiState extends State<AllTaskUi> {
         centerTitle: true,
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => AddTaskUi()),
+          );
+        },
         child: Icon(
           Icons.add,
           color: Colors.white,
@@ -32,6 +38,7 @@ class _AllTaskUiState extends State<AllTaskUi> {
         backgroundColor: Colors.grey,
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+
     );
   }
 }
