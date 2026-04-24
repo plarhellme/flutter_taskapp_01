@@ -6,7 +6,7 @@ class Task {
   String? task_where;
   int? task_person;
   bool? task_status;
-  DateTime? task_duedate;
+  String? task_duedate;
   String? task_image_url;
 
   Task({
